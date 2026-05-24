@@ -31,7 +31,7 @@ DeepSeek's prefix caching reuses computation for identical initial tokens across
 
 ```bash
 # Clone the repo wherever you like
-git clone https://github.com/YOUR_USER/open-reason.git
+git clone https://github.com/lukaszkieronski/open-reason.git
 cd open-reason
 
 # Install dependencies
