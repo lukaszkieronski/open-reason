@@ -1,0 +1,28 @@
+{
+  "name": "open-reason",
+  "version": "0.1.0",
+  "description": "DeepSeek prefix-cache optimization plugin for OpenCode",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "bundle": "esbuild src/index.ts --bundle --platform=node --external:@opencode-ai/plugin --format=esm --outfile=dist/bundle.js && cp dist/bundle.js .opencode/plugins/open-reason.js"
+  },
+  "dependencies": {
+    "@opencode-ai/plugin": "^1.15.7",
+    "reasonix": "^0.49.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.9.1",
+    "esbuild": "^0.28.0",
+    "typescript": "^5.5.0"
+  },
+  "keywords": [
+    "opencode",
+    "plugin",
+    "deepseek",
+    "cache",
+    "prefix-cache"
+  ]
+}
